@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 app.post('/students', db.deleteAndCreateStudent)
 app.delete('/students/:email', db.deleteStudentByEmail)
-app.get('/students/:email', db.selectStudent)
+app.get('/students/:email', db.selectStudentId)
 
 // #DualExperienceDesafio2
 app.post('/enrolls', db.insertEnroll)
